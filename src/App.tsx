@@ -135,7 +135,7 @@ export default function App() {
   const getBadge = (streak: number) => {
     if (streak >= 7) return 'Legend 🏆';
     if (streak >= 3) return 'Bronze 🥉';
-    return 'Seed 🌱';
+    return 'Seed 🌿';
   };
 
   if (!isLoaded) return null;
@@ -153,7 +153,7 @@ export default function App() {
             </div>
             <div className="flex flex-col border-l border-white/40 pl-4">
               <span className="text-[10px] font-bold uppercase tracking-widest text-slate-500">Today</span>
-              <span className="text-xl font-bold text-slate-800">{userState.dailyCompletions} / 3 🌱</span>
+              <span className="text-xl font-bold text-slate-800">{userState.dailyCompletions} / 3 🌿</span>
             </div>
           </div>
           <button 
